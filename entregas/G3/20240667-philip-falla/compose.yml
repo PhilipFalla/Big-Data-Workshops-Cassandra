@@ -1,0 +1,48 @@
+# =============================================================================
+#  Taller Apache Cassandra 5.0 - Big Data, UFM 2026 S2
+#
+#  Parte 1: un solo nodo, con los nombres por defecto.
+#  Parte 2: queda solo el servicio del nodo que te toco en el cluster del grupo
+#  (cassandra1, cassandra2 o cassandra3), con el nombre de cluster y el
+#  datacenter de tu grupo.
+#
+#  Los datos viven en volumenes con nombre y sobreviven a "docker compose down".
+# =============================================================================
+name: taller-cassandra
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # CASSANDRA1 -> desde tu maquina es localhost:9042 (protocolo CQL)
+  #
+  # En Cassandra no hay NameNode ni controller: todos los nodos son iguales.
+  # Cualquiera recibe una consulta y la reparte (es el "coordinador").
+  # ---------------------------------------------------------------------------
+  cassandra1:
+    image: cassandra:5.0.8
+    container_name: cassandra1
+    hostname: cassandra1
+    ports:
+      - "7000:7000"   # comunicación entre nodos (gossip)
+      - "9042:9042"   # CQL
+    environment:
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 128M
+      CASSANDRA_CLUSTER_NAME: UFM-G3
+      CASSANDRA_DC: dc-g3
+      CASSANDRA_RACK: rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_BROADCAST_ADDRESS: 100.104.232.15
+      CASSANDRA_BROADCAST_RPC_ADDRESS: 100.104.232.15
+      CASSANDRA_SEEDS: 100.104.232.15
+    volumes:
+      - cassandra1-data:/var/lib/cassandra
+      - ./data:/data:ro
+
+# -----------------------------------------------------------------------------
+# Volumenes con nombre: aqui viven los datos de cada nodo.
+#   docker compose down      -> los conserva
+#   docker compose down -v   -> LOS BORRA (solo para empezar de cero)
+# -----------------------------------------------------------------------------
+volumes:
+  cassandra1-data:

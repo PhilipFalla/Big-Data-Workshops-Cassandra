@@ -1,0 +1,52 @@
+
+ usuario_id | nombre_usuario | creado_en
+------------+----------------+---------------------------------
+      du230 |     camila7188 | 2024-06-25 00:00:00.000000+0000
+
+(1 rows)
+
+ enviado_en                      | nombre_usuario | contenido
+---------------------------------+----------------+------------------------------
+ 2026-09-30 23:41:08.000000+0000 |       luis6912 |           ya quedó el deploy
+ 2026-09-30 22:48:15.000000+0000 |      maría2348 |                  mañana sigo
+ 2026-09-30 17:27:05.000000+0000 |       luis8258 |                     gracias!
+ 2026-09-30 14:30:03.000000+0000 |     camila2470 |                        listo
+ 2026-09-30 12:59:17.000000+0000 |      sofía3315 | revisen el canal de anuncios
+ 2026-09-30 11:32:23.000000+0000 |     isabel3065 |                  me uno en 5
+ 2026-09-30 10:57:29.000000+0000 |      jorge1844 |                qué opinan de
+ 2026-09-30 08:56:10.000000+0000 |       sofía373 |            alguien sabe cómo
+ 2026-09-30 08:53:37.000000+0000 |       luis3299 |              esto no compila
+ 2026-09-30 08:46:48.000000+0000 |        ana6941 |              esto no compila
+ 2026-09-30 07:10:01.000000+0000 |    valeria7170 |                  mañana sigo
+ 2026-09-30 05:38:23.000000+0000 |      jorge6165 |                        listo
+ 2026-09-30 05:18:51.000000+0000 |     andrés7568 |                         jaja
+ 2026-09-30 04:15:23.000000+0000 |     andrés5592 |                         jaja
+ 2026-09-29 22:38:50.000000+0000 |      pablo2278 |                  mañana sigo
+ 2026-09-29 18:52:04.000000+0000 |      paula6406 |                     gracias!
+ 2026-09-29 18:08:15.000000+0000 |     andrés2729 |           ya quedó el deploy
+ 2026-09-29 16:51:47.000000+0000 |      sofía4209 | revisen el canal de anuncios
+ 2026-09-29 10:45:34.000000+0000 |      maría8335 |     a qué hora es la reunión
+ 2026-09-29 10:13:57.000000+0000 |        ana4327 |            alguien sabe cómo
+
+(20 rows)
+
+ enviado_en                      | nombre_servidor     | nombre_canal | contenido
+---------------------------------+---------------------+--------------+------------------------------
+ 2026-09-30 23:01:14.000000+0000 |  Comunidad Cripto 4 |     anuncios |           ya quedó el deploy
+ 2026-09-30 11:24:53.000000+0000 |     Comunidad Dev 9 |       música |           ya quedó el deploy
+ 2026-09-28 15:02:20.000000+0000 |  Comunidad Libros 2 |        memes |              esto no compila
+ 2026-09-28 13:55:25.000000+0000 |    Comunidad Arte 7 |    proyectos | revisen el canal de anuncios
+ 2026-09-28 11:52:50.000000+0000 | Comunidad Cripto 10 |     anuncios | revisen el canal de anuncios
+ 2026-09-27 11:12:56.000000+0000 |     Comunidad Dev 9 |       música |                         jaja
+ 2026-09-25 21:36:12.000000+0000 |     Comunidad Dev 9 |       música |                qué opinan de
+ 2026-09-24 21:04:25.000000+0000 |     Comunidad Dev 9 |       música |                        listo
+ 2026-09-24 16:39:01.000000+0000 |  Comunidad Cripto 4 |        dudas |           ya quedó el deploy
+ 2026-09-24 00:05:01.000000+0000 | Comunidad Cripto 10 |    off-topic |                        listo
+
+(10 rows)
+
+ mensajes
+----------
+       17
+
+(1 rows)
